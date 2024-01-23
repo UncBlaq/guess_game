@@ -10,6 +10,8 @@ class Account:
         return
     
     def withdraw(self, amount):
+        if amount > self.balance:
+            raise ValueError("You be thief o!")
         self.balance -= amount
         return
     
