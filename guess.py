@@ -16,8 +16,15 @@ guesses = []
 
 #While true for my Guess loop iteration
 while True:
-    guess = int(input("What is your Guess? "))
+   
+    # try:
+    #   guess = int(input("What is your Guess? "))
+    # except ValueError("Please enter a valid integer.")
+
     guesses.append(guess)
+  
+         
+        
 
     if guess<1 or guess>100:
         print("OUT OF BOUND")
